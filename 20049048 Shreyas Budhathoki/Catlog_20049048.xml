@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="catlog_20049048.css" type="text/css"?>
+<!--
+    Author : Shreyas Budhathoki
+    London Met:20049048
+    Date : 3/15/2022
+-->
+<GiftStore xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Catlog_20049048.xsd">
+    <!-- navigation bar -->
+    <navbar id="nav">
+        <logo id="img"></logo>
+        <home>Home</home>
+        <digital>Digital</digital>
+        <physical>Physical</physical>
+        <contact>Contact</contact>
+    </navbar>
+    <title>Shrey Gift Store</title>
+    <moto>A CARD FOR HAPPINESS</moto>
+
+    <!-- for css-->
+
+    <giftcard>
+        <card ID="Val" type="Digital">
+            <name> Valorant Gift Card </name>
+
+            <img id="valorant-img" src="Valorant.jpg" alt="" />
+
+            <country> US </country>
+            <price> 59.99$</price>
+            <availability>Available</availability>
+            <!-- discount us optional-->
+            <discount>10% off (New year special)</discount>
+            <quantity>  25 </quantity>
+            <user> 500 </user>
+            <description>
+                <![CDATA[The ideal present for everyone who enjoys VALORANT or is interested in trying it out for the first time.
+                Allows you to purchase weapon skins and unlock new agents with in-game dollars.
+                Gift certificates can only be used on Riot accounts in the United States.]]></description>
+            <!-- review is also optional-->
+            <reviews>
+                Peoples view towards the card.
+                <recommendations> Recommended by 3K+ people </recommendations>
+                <rating>  8.5</rating>
+            </reviews>
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+
+        <card ID="AP" type="physical">
+            <name> APPLE Gift Card</name>
+
+            <img id="Apple-img" src="Apple.jpg" alt="" />
+
+            <country> USA</country>
+            <br></br>
+            <price>49.99$</price>
+            <availability>Available</availability>
+            <deliverycost> 20$ </deliverycost>
+            <discount> 10% Off  </discount>
+            <quantity> 40</quantity>
+            <user> 2k </user>
+            <description>
+                <![CDATA[Purchase Apple devices, accessories, games, music, movies, and more with your Apple Gift Card. whether Whether your loved one already owns an Apple product or will soon acquire one, an Apple gift card can be used to pay for it as well as other items such as games, music, and other entertainment. The redemption of a gift code does not necessitate the use of a credit card.]]>
+                </description>
+            <!-- product details is optional-->
+            <reviews>
+                Peoples view towards the card.
+                <recommendations> Recommended by 4K+ people </recommendations>
+                <rating>  6.5</rating>
+            </reviews>
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+
+        <card ID="NF" type="Digital">
+            <name> Netflix Gift Card</name>
+
+            <img id="netflix-img" src="Netflix-o.png" alt="" />
+
+            <country>USA</country>
+            <price> 89.99$</price>
+            <availability>Available</availability>
+            <quantity>5 </quantity>
+            <user>  4k </user>
+            <!-- discount is optional-->
+            <description>
+                <![CDATA[Netflix gift cards are also a terrific idea! Give your friends and family the gift of unlimited access to movies and Netflix original series by giving them the gift of entertainment. Whether your loved one currently has a Netflix account or will be creating one, a Netflix gift card can be used to pay for their membership. A gift code does not require a credit card to be redeemed.]]>
+              </description>
+            <!-- review is also optional-->
+            <reviews>
+                Peoples view towards the card.
+                <recommendations> Recommended by 2K+ people </recommendations>
+                <rating>  9.5</rating>
+            </reviews>
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+
+        <card ID="IT" type="Digital">
+            <name> iTunes Gift Card</name>
+
+            <img id="ituens-img" src="ituens.png" alt="" />
+
+            <country> USA</country>
+            <price> 19.99$</price>
+            <availability>Available</availability>
+            <discount> 20% OFF (Christmas offer)  </discount>
+            <quantity> 45</quantity>
+            <user>  11k </user>
+            <description>
+                <![CDATA[ Use your iTuens Gift card to purchases your favorite songs,TV shows,movies and podcasts.iTuens is the easiest way to enjoy your favorite music and other shows.A iIunes gift card can be used to pay for your or ur familys iTunes so you or your family can enjoy the music ,TV shows etc.]]>
+                </description>
+            <!-- review is also optional-->
+            <reviews>
+                Peoples view towards the card.
+                <recommendations> Recommended by 10K+ people </recommendations>
+                <rating> 8</rating>
+            </reviews>
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+
+        <card ID="BR" type="physical">
+            <name id="card-header">Baskin Robbins </name>
+
+            <img id="baskinrobbins-img" src="Baskinrobbins.png" alt="" />
+
+            <country>London</country>
+            <price>  99.99$</price>
+            <availability>Unavailable</availability>
+            <deliverycost> 20$ </deliverycost>
+            <discount>  10% OFF </discount>
+            <quantity> 0 </quantity>
+            <user>10k above</user>
+            <description>
+                <![CDATA[ In over 8,000 retail locations in 55 countries, Baskin-Robbins creates and markets innovative, premium hard scoop ice cream, a full range of beverages, and a delectable lineup of desserts, including custom ice cream cakes, the Polar Pizza Ice Cream Treat, and take-home ice cream quarts and pints, all of which provide quality and value to consumers.]]>
+            </description>
+            <!-- review is also optional-->
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+
+
+        <card ID="SP" type="physical">
+            <name id="card-header"> Play Station Gift Card </name>
+
+            <img id="PS-img" src="PS.jpg" alt="" />
+
+            <country> Country: US</country>
+            <price> 49.99$</price>
+            <availability>Available</availability>
+            <deliverycost> 30$ </deliverycost>
+            <discount> 15% OFF (for first 10 customer) </discount>
+            <quantity> 20 </quantity>
+            <user> 5k above</user>
+            <description>
+                <![CDATA[The perfect present for gamers is a Sony PlayStation® Gift Card. Purchase games, add-ons, in-game credits, season passes, and even movies with it. You can use a PlayStation Gift Card on a PlayStation console, computer, smartphone, or table]]>
+            </description>
+
+            <reviews>
+                Peoples view towards the card.
+                <recommendations> Recommended by 1K+ people </recommendations>
+                <rating> 7.5</rating>
+            </reviews>
+            <button ID="btn">Add to cart </button>
+            <button ID="btn"> BuyNow</button>
+        </card>
+    </giftcard>
+    <!--footer -->
+    <footer ID="footer">
+
+        <Store>Shrey GiftCard </Store>
+        <Address> Wickford </Address>
+        <Tele-phone>Tell:014786534</Tele-phone>
+        <Phone>  9813445520 </Phone>
+        <media> Gift Card (Facebook,Instragram) </media>
+        <Website>Website:ShreyGiftCard.com</Website>
+        <email>Email: Sgiftcard@gmail.com</email>
+
+    </footer>
+
+
+</GiftStore>

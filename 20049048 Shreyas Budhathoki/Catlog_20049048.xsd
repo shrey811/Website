@@ -1,0 +1,146 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="GiftStore" type="GiftStoreType">
+    <xs:annotation>
+      <xs:documentation>
+    Author : Shreyas Budhathoki
+    London Met:20049048
+    Date : 3/15/2022
+</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="logoType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="navbarType">
+    <xs:sequence>
+      <xs:element type="logoType" name="logo"/>
+      <xs:element type="xs:string" name="home"/>
+      <xs:element type="xs:string" name="digital"/>
+      <xs:element type="xs:string" name="physical"/>
+      <xs:element type="xs:string" name="contact"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id"/>
+  </xs:complexType>
+  <xs:complexType name="imgType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+        <xs:attribute type="xs:string" name="src" use="optional"/>
+        <xs:attribute type="xs:string" name="alt" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="reviewsType" mixed="true">
+    <xs:sequence>
+      <xs:element type="xs:string" name="recommendations"/>
+      <xs:element type="xs:float" name="rating"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="buttonType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="ID" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="cardType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:complexType>
+          <xs:simpleContent>
+            <xs:extension base="xs:string">
+              <xs:attribute type="xs:string" name="id" use="optional"/>
+            </xs:extension>
+          </xs:simpleContent>
+        </xs:complexType>
+      </xs:element>
+      <xs:element type="imgType" name="img"/>
+      <xs:element type="xs:string" name="country"/>
+      <xs:element type="xs:string" name="br" minOccurs="0"/>
+      <xs:element type="xs:string" name="price"/>
+      <xs:element name="availability">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Available"/>
+            <xs:enumeration value="Unavailable"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="deliverycost" minOccurs="0"/>
+      <xs:element type="xs:string" name="discount" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> discount us optional</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="xs:float" name="quantity"/>
+      <xs:element type="xs:string" name="user"/>
+      <xs:element type="xs:string" name="description">
+        <xs:annotation>
+          <xs:documentation> discount is optional</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="reviewsType" name="reviews" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> review is also optional product details is optional review is also optional review is also optional</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="buttonType" name="button" maxOccurs="unbounded" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation> review is also optional</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="ID" use="optional"/>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="nameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="id" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="giftcardType">
+    <xs:sequence>
+      <xs:element type="cardType" name="card" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="footerType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="Store"/>
+      <xs:element type="xs:string" name="Address"/>
+      <xs:element type="xs:string" name="Tele-phone"/>
+      <xs:element type="xs:float" name="Phone"/>
+      <xs:element type="xs:string" name="media"/>
+      <xs:element type="xs:string" name="Website"/>
+      <xs:element type="xs:string" name="email"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="ID"/>
+  </xs:complexType>
+  <xs:complexType name="GiftStoreType">
+    <xs:sequence>
+      <xs:element type="navbarType" name="navbar">
+        <xs:annotation>
+          <xs:documentation> navigation bar </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="xs:string" name="title"/>
+      <xs:element type="xs:string" name="moto"/>
+      <xs:element type="giftcardType" name="giftcard">
+        <xs:annotation>
+          <xs:documentation> for css</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element type="footerType" name="footer">
+        <xs:annotation>
+          <xs:documentation>footer </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+      

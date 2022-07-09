@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+GiftStore {
+  text-align: center;
+  background-image: url("./background2.jpg");
+}
+
+#nav {
+  display: flex;
+  background-color: #262647;
+  background-image: linear-gradient(to right, #c7c8c9 0%, #8c7fd6 51%, #b7b7cf 100%);
+  color: rgb(51, 94, 129);
+  padding: 20px 10px;
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-evenly;
+}
+
+#nav:active {
+  background-color: #c2cffc;
+}
+
+home {
+  font-size: 2rem;
+  float: top right;
+  color: #373f5c;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: right;
+}
+
+home span {
+  margin-left: 1rem;
+  transition: 00.2s;
+}
+
+home:active,
+home:hover {
+  background-color: #c2cffc;
+}
+
+home:hover span,
+home:active span {
+  margin-left: 1.5rem;
+}
+
+digital {
+  font-size: 2rem;
+  float: top right;
+  color: #373f5c;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: right;
+}
+
+digital span {
+  margin-left: 1rem;
+  transition: 00.2s;
+}
+
+digital:active,
+digital:hover {
+  background-color: #c2cffc;
+}
+
+digital:hover span,
+digital:active span {
+  margin-left: 1.5rem;
+}
+
+
+physical {
+  font-size: 2rem;
+  float: top right;
+  color: #373f5c;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: right;
+}
+
+physical span {
+  margin-left: 1rem;
+  transition: 00.2s;
+}
+
+physical:active,
+physical:hover {
+  background-color: #c2cffc;
+}
+
+physical:hover span,
+physical:active span {
+  margin-left: 1.5rem;
+}
+
+contact {
+  font-size: 2rem;
+  float: top right;
+  color: #373f5c;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: right;
+}
+
+contact span {
+  margin-left: 1rem;
+  transition: 00.2s;
+}
+
+contact:active,
+contact:hover {
+  background-color: #c2cffc;
+}
+
+contact:hover span,
+contact:active span {
+  margin-left: 1.5rem;
+}
+
+country::before {
+  content: "Country: ";
+}
+
+availability::before {
+  content: "Availability: ";
+}
+
+rating::before {
+  content: "Rating: ";
+}
+
+deliverycost::before {
+  content: "Delivery Price: ";
+}
+
+user::before {
+  content: "User: ";
+}
+
+quantity::before {
+  content: "Quantity: ";
+}
+
+price::before {
+  content: "Price: ";
+}
+
+reviews::before {
+  content: "Reviews: ";
+}
+
+discount::before {
+  content: "Discount: ";
+}
+
+description::before {
+  content: "Description: ";
+}
+
+* {
+  display: block;
+  font-family: 'Trebuchet MS', 'Arial';
+  padding: 3px;
+}
+
+title {
+  background-color: white;
+  color: rgb(54, 53, 53);
+  text-align: center;
+  font-size: 6rem;
+  font-family: 'Dancing Script';
+}
+
+title:hover {
+  color: rgb(8, 8, 8);
+}
+
+moto {
+  color: rgb(54, 53, 53);
+  text-align: center;
+  font-size: 2rem;
+
+}
+
+button {
+  font-size: 2rem;
+  color: #373f5c;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: center;
+}
+
+button span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+button:hover,
+button:active {
+  background-color: #c2cffc;
+}
+
+button:hover span,
+button:active span {
+  margin-left: 1.5rem;
+}
+
+
+#img {
+  content: url("./images/logo1.png");
+  height: 80px;
+  width: 100px;
+}
+
+
+
+name {
+  font-size: 3rem;
+  font-family: 'Dancing Script';
+  color: rgb(54, 53, 53);
+  text-align: center;
+}
+
+giftcard {
+  display: grid;
+  width: 100em;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 3fr));
+  margin-top: 80px;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  justify-content: space-evenly;
+}
+
+card {
+  display: grid;
+  background-color: #fff3f3;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 80px;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+}
+
+
+card:hover {
+  transform: translateY(0.5%);
+  box-shadow: 0 6rem 12rem rgba(0, 0, 0, 0.5);
+}
+
+#valorant-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: scale-down;
+  object-position: left;
+  content: url(./images/Valorant.jpg);
+}
+
+#baskinrobbins-img {
+  display: block;
+  object-fit: contain;
+  object-position: right;
+  width: 120%;
+  height: 20rem;
+  content: url(./images/Baskinrobbins.png);
+}
+
+#ituens-img {
+  display: block;
+  object-fit: scale-down;
+  object-position: left;
+  width: 100%;
+  height: 30rem;
+  content: url(./images/Ituens.png);
+  align-content: left;
+}
+
+#netflix-img {
+  display: block;
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
+  height: 20rem;
+  content: url(./images/Netflix-o.jpg)
+}
+
+#Apple-img {
+  display: block;
+  float: center;
+  object-position: right;
+  width: 100%;
+  height: 20rem;
+  object-fit: scale-down;
+  content: url(./images/Apple.jpg)
+}
+
+#PS-img {
+  display: block;
+  object-fit: scale-down;
+  object-position: right;
+  width: 100%;
+  height: 30rem;
+  content: url(./images/PS.jpg)
+}
+footer{
+  display: flex;
+  background-color: #3a4672;
+  text-align: center;
+  padding: 20px 16px;
+  color: white;
+  font-size: 25px;
+  flex-direction: initial;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+Store {
+  font-size: 2rem;
+  float: top right;
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+  text-align: right;
+}
+
+Store span {
+  margin-left: 1rem;
+  transition: 00.2s;
+}
+
+Store:active,
+Store:hover {
+  background-color: #2f354d;
+}
+
+Store:hover span,
+Store:active span {
+  margin-left: 1.5rem;
+}
